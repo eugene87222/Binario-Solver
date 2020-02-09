@@ -133,7 +133,7 @@ if __name__ == '__main__':
     for n in [6, 8, 12]:
         START = time.time()
         sudoku = np.ones((n, n), dtype=np.int32) * -1
-        readPuzzle(sudoku, f'puzzle_b_{n}_1.txt')
+        readPuzzle(sudoku, f'puzzle_{n}x{n}.txt')
         printSukodu(sudoku)
         solve(sudoku, 0, 0)
         printSukodu(sudoku)
